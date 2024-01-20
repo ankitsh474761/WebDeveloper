@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap&#39;");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: yellow;
+    color: blue;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 10vh;
+    background-color: rgb(235, 236, 236);
+    padding:0 15px;
+}
+.nav-bar p{
+    animation: bounceInRight 2s;
+    font-size: 1.8em;
+    padding-left: 1.6em;
+    font-weight: 500;
+    font-family: 'Sriracha', cursive;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+    padding: 30px 16px;
+}
+.nav-bar nav:hover a{
+    filter: blur(5px);
+    background-color: rgb(113, 113, 159);
+}
+.nav-bar nav a:hover{
+    filter: blur(0px);
+    color: white;
+    background-color: black;
+}
+.banner-image{
+    background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 220px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif !important;
+}
+.banner-text h1{
+    font-size: 3.3em;
+    animation: fadeInTopLeft 2s;
+}
+.banner-text p{
+    padding-top: 22px;
+    animation: fadeInUpBig 2s;
+    opacity: .7;
+}
+.banner-text button{
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 7px 7px;
+    width: 7em;
+    /* margin-left: 37em; */
+    border: none;
+    border-radius: 7px;
+    color: black;
+    background-color: rgb(110, 205, 220);
+    animation: heartBeat 3s;
+}
+.banner-text button:hover{
+    transform: scale(1.1);
+    box-shadow: 7px 7px 7px rgb(130, 129, 127);
+    color: white;
+    transition: all 1s;
+}
+.container1{
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container1 div{
+    padding-top: 23px;
+    width: 17%;
+    height: 60%;
+    text-align: justify;
+}
+.container1 div:hover{
+    transform: scale(1.1);
+    background-color: rgba(9, 4, 55, 0.856);
+    transition: all 1s;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px rgb(158, 155, 155),10px 10px 10px rgb(7, 85, 180);
+}
+.container1 div:hover :nth-child(3){
+    padding: 1.2em;
+}
+.container1 div:hover {
+    color: white;
+}
+.container1  div:hover i{
+    border-color: white;
+}
+.container1 i{
+    font-size: 3em;
+    border: 2px solid black;
+    border-radius: 55px;
+    padding: 15px;
+    margin-left: 2em;
+}
+
+.container1 p{
+    padding-top: 7px;
+    padding-left: 1.3em;
+}
+.container1 div :nth-child(3){
+    margin-top: 8px;
+}
+.head{
+    text-align: center;
+}
+hr{
+    margin-top: 7em;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 section:hover{
+    background-color: rgba(9, 4, 55, 0.856);
+    transform: scale(.8);
+    box-shadow: 10px 10px 10px rgb(158, 155, 155),10px 10px 10px rgb(7, 85, 180);
+    border-radius: 12px;
+    width: 100%;
+    height: 60vh;
+    transition: all 1s;
+    color: white;
+    margin-left: 2em;
+}
+.container2 section:hover article h1{
+    padding-left: 2em;
+    font-size: 2em;
+}
+.container2 section:hover article p{
+    padding: 2em;
+    font-size: 2em;
+}
+.container2 section article{
+    text-align: justify;
+    padding-left: 10em;
+}
+.container2 section article h1{
+    font-size: 1.7em;
+}
+.container2 aside:hover{
+  background-color: rgba(9, 4, 55, 0.856);
+    box-shadow: 10px 10px 10px rgb(158, 155, 155),10px 10px 10px rgb(7, 85, 180);
+    transform: scale(.8);
+    border-radius: 12px;
+
+    transition: all 1s;
+    color: white;
+    margin-left: 2em;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    text-align: justify;
+}
+aside{
+    width: 55%;
+}
+.container2 section article p{
+    padding-top: 1.5em;
+    opacity: .7;
+}
+.container2 aside {
+    /* padding-right: 4em;
+    padding-top: 3em; */
+    padding: 3em;
+}
+.container2 aside img{
+    border-radius: 20px;
+    width: 100%;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(9, 4, 55, 0.856);
+    color: white;
+    height: 40vh;
+}
+ .dev{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dev p:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+    box-shadow: 5px 5px 5px rgb(158, 155, 155),5px 5px 5px rgb(7, 85, 180);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.links:hover a{
+    filter: blur(3px);
+} 
+.links a:hover{
+    filter: blur(0px);
+    transform: scale(1.4);
+    transition: all 1ms;
+    box-shadow: 5px 5px 5px rgb(158, 155, 155),5px 5px 5px rgb(7, 85, 180);
+    padding: 5px;
+    border-radius: 5px;
+}
+ .right-link{
+    width: 60%;
+    word-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+}
+.right-link  a{
+    text-decoration: none;
+    color: white;
+    line-height: 2.2em;
+}
+
+@media (max-width:1444px){
+    .container1 div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container1 i{
+        align-items: center;
+        margin-left: 0;
+    }
+    .container1 p{
+        padding: 5px;
+    }
+}
+@media (max-width:683px){
+    .container1{
+        flex-direction: column;
+    }
+    .container1 div{
+        width: 70%;
+        margin-top: 2em;
+    }
+}
+@media (max-width:683px){
+    .container2{
+        flex-direction: column;
+    }
+    .container2 section{
+        width: 80%;
+        padding-top: 1em;
+    }
+    .container2 section article{
+        padding-left: 0;
+    }
+    
+    .container2 aside{
+        width: 80%;
+    }
+}
+@media (max-width:683px){
+    .nav-bar{
+        padding: 0;
+    }
+}
+@media(max-width:517px){
+    .nav-bar a{
+        padding: 20px;
+    }
+}
+@media (max-width:683px){
+    .banner-text h1{
+        font-size: 2em;
+    }
+    .banner-text p{
+        letter-spacing: 0;
+    }
+    .banner-text button{
+        font-size: .8em;
+    }
+    .banner-image {
+        height: 50vh;
+    }
+}
